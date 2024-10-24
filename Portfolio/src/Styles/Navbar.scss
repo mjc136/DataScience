@@ -1,0 +1,13 @@
+.navbar {
+    .nav-link {
+        &.active {
+            font-weight: bold; // Make active link bold
+        }
+    }
+
+    position: fixed;
+    top: 0;
+    height: 4rem;
+    width: 100%;
+    z-index: 1030; /* Ensure this is above other content */
+}
