@@ -28,7 +28,9 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install sass typescript
 
       # Step 4: Compile SCSS to CSS
       - name: Compile SCSS
@@ -38,7 +40,7 @@ jobs:
       - name: Compile TypeScript
         run: npx tsc --outDir Portfolio/dist
 
-      # Step 6: Upload compiled files as artifact (if needed)
+      # Step 6: Upload compiled files as artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
