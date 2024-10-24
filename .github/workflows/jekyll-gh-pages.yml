@@ -1,43 +1,47 @@
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: Build and Deploy Portfolio
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches:
+      - main
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      # Step 1: Checkout the repository
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+
+      # Step 2: Set up Node.js (for SCSS and TypeScript compilation)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          source: ./Portfolio  # Changed source to Portfolio directory
-          destination: ./_site  # Destination remains the same
+          node-version: '18'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Compile SCSS to CSS
+      - name: Compile SCSS
+        run: npx sass Portfolio/src/Styles/Main.scss Portfolio/src/Styles/Main.css
+
+      # Step 5: Compile TypeScript to JavaScript
+      - name: Compile TypeScript
+        run: npx tsc --outDir Portfolio/dist
+
+      # Step 6: Upload compiled files as artifact (if needed)
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
