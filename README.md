@@ -1,6 +1,6 @@
 # DataScience
 
-To install requirements:
+To install requirements for machine learning models:
 ```bash
 
 python -m venv venv
