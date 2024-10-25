@@ -23,27 +23,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Set working directory to Portfolio
-      - name: Set working directory to Portfolio
-        working-directory: ./Portfolio
-        run: echo "Entered Portfolio directory"
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Specify the Node.js version
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        working-directory: ./Portfolio
         run: |
           npm install
           npm install sass typescript
 
       # Step 4: Compile SCSS to CSS
       - name: Compile SCSS
-        working-directory: ./Portfolio
         run: |
           npx sass src/Styles/Main.scss src/Styles/Main.css
 
       # Step 5: Compile TypeScript
       - name: Compile TypeScript
-        working-directory: ./Portfolio
         run: |
           npx tsc --outDir dist
 
