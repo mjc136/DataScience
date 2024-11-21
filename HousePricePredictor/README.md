@@ -11,7 +11,7 @@
 <p>To visualise the data I created a scatter plot graph.</p>
 <p>I noticed during a major drop during 2008 during the market crash and a minor drop during the 202 covid pandemic.</p>
 <br />
-<h2>alghorithms</h2>
+<h2>Algorithms</h2>
 <p>I chose to use a linear regression model as house prices have steadily increased over the years</p>
 <h2>Online Resources</h2>
 <p>I Used the following documentation</p>
