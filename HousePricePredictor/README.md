@@ -1,28 +1,80 @@
 <h1>House Price Predictor</h1>
+
+<h2>Project Overview</h2>
+<p>
+    House Price Predictor is a Python-based application that forecasts average house prices in the UK. 
+    Users can select specific regions to filter data, view scatter plot visualisations, and predict prices 
+    using a linear regression model.
+</p>
+
+<h2>Key Features</h2>
+<ul>
+    <li>Filter historical house price data by region (1995–2024).</li>
+    <li>Visualise trends using scatter plots.</li>
+    <li>Predict future house prices with linear regression.</li>
+    <li>Highlight the impact of major economic events on house prices.</li>
+</ul>
+
 <h2>Data Source</h2>
-<p>I got my data from the United Kingdom government datasets.</p>
-<p>There is just over 141,000 rows in the data set ranging from 1995-2024</p>
-<a href="https://www.gov.uk/government/statistical-data-sets/uk-house-price-index-data-downloads-january-2024">Here</a>
-<br />
+<p>
+    The dataset was obtained from UK government datasets, containing over 141,000 rows spanning from 1995 to 2024. 
+    <a href="https://www.gov.uk/government/statistical-data-sets/uk-house-price-index-data-downloads-january-2024" target="_blank">
+        Dataset link
+    </a>
+</p>
+
 <h2>Pre-Processing</h2>
-<p>I split the data 70/30 for training and testing.</p>
-<p>When the user selects an area it will only use data from that area in it's calculations</p>
-<h2>Data Understanding and visualisation</h2>
-<p>To visualise the data I created a scatter plot graph.</p>
-<p>I noticed during a major drop during 2008 during the market crash and a minor drop during the 202 covid pandemic.</p>
-<br />
+<ul>
+    <li>Data is split 70/30 for training and testing.</li>
+    <li>Region-based filtering ensures predictions are specific to the selected area.</li>
+</ul>
+
+<h2>Data Understanding and Visualisation</h2>
+<p>
+    Scatter plots were created to visualise trends. Notable observations include:
+</p>
+<ul>
+    <li>A significant drop in 2008 during the financial crisis.</li>
+    <li>A minor dip in 2020 due to the COVID-19 pandemic.</li>
+</ul>
+
 <h2>Algorithms</h2>
-<p>I chose to use a linear regression model as house prices have steadily increased over the years</p>
-<h2>Online Resources</h2>
-<p>I Used the following documentation</p>
-<a href="https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html">matplotlib</a>
-<br />
-<a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://numpy.org/doc/&ved=2ahUKEwiKkpzFiKqJAxWZXEEAHYicNEcQFnoECB0QAQ&usg=AOvVaw2a_3m0ZLpgxN-0uzQZP6YA">NumPy</a>
-<br />
-<a href="https://pandas.pydata.org/docs/">pandas</a>
-<br />
-<br />
+<p>
+    Linear regression was chosen for its simplicity and suitability for capturing steady increases in house prices over time.
+</p>
+<p>
+    The slope of the regression line indicates the average annual increase in house prices within the selected region.
+</p>
+
 <h2>Tools Used</h2>
-<p>Python was the programming language i used as i am most comfortable with it </p>
-<p>I used the following python libraries (Pandas, NumPy, Matplotlib, ipywidgets)</p>
-<p>I used Jupyter Notebook for development and Github for version control</p>
+<ul>
+    <li><strong>Programming Language:</strong> Python</li>
+    <li><strong>Libraries:</strong> Pandas, NumPy, Matplotlib, ipywidgets</li>
+    <li><strong>Development Environment:</strong> Jupyter Notebook</li>
+    <li><strong>Version Control:</strong> GitHub</li>
+</ul>
+
+<h2>Results and Observations</h2>
+<p>
+    The linear regression model highlights steady growth in house prices over time. 
+    Economic downturns, such as the 2008 market crash and the 2020 pandemic, caused noticeable drops.
+</p>
+<p>
+    The slope of the regression line provides an estimate of the average annual growth in house prices for the selected region.
+</p>
+
+<h2>Future Enhancements</h2>
+<ul>
+    <li>Add advanced machine learning models (e.g., Random Forest, Gradient Boosting).</li>
+    <li>Include additional datasets for deeper insights.</li>
+    <li>Develop a standalone web application for better accessibility.</li>
+</ul>
+
+<h2>Online Resources</h2>
+<ul>
+    <li><a href="https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html" target="_blank">Matplotlib Documentation</a></li>
+    <li><a href="https://numpy.org/doc/" target="_blank">NumPy Documentation</a></li>
+    <li><a href="https://pandas.pydata.org/docs/" target="_blank">Pandas Documentation</a></li>
+</ul>
+
+
