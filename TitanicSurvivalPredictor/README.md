@@ -8,7 +8,7 @@
 
 <h2>Pre-Processing</h2>
 <p>I split the data into 70/30 for training and testing.</p>
-<p>The data was cleaned by handling missing values, converting categorical variables into numerical ones, and normalising the data when necessary.</p>
+<p>The data was cleaned by handling missing values, converting categorical variables into numerical ones.</p>
 <p>I used the following steps for data preparation:</p>
 <ul>
     <li>Imputed missing values for Age using the median.</li>
@@ -24,6 +24,7 @@
     <li>A higher percentage of women and children survived compared to men.</li>
     <li>The majority of passengers were younger than 40 years old.</li>
 </ul>
+<p>Although a reasonable accuracy was reached the dataset was too small for a very accurate model.</p>
 
 <h2>Algorithms</h2>
 <p>I chose to use a <strong>Decision Tree Classifier</strong> for predicting survival on the Titanic. This model is ideal for handling both categorical and numerical data, which is common in the Titanic dataset. I used the <code>entropy</code> criterion to evaluate splits and set the maximum depth of the tree to 5 to prevent overfitting.</p>
