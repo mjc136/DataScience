@@ -9,7 +9,6 @@
 
 <h2>Key Features</h2>
 <ul>
-    <li>Filter historical house price data by region (1995–2024).</li>
     <li>Visualise trends using scatter plots.</li>
     <li>Predict future house prices with linear regression.</li>
     <li>Highlight the impact of major economic events on house prices.</li>
@@ -17,7 +16,7 @@
 
 <h2>Data Source</h2>
 <p>
-    The dataset was obtained from UK government datasets, containing over 141,000 rows spanning from 1995 to 2024. 
+    The dataset was obtained from UK government datasets, containing over 141,000 rows spanning from 1968 to 2024. 
     <a href="https://www.gov.uk/government/statistical-data-sets/uk-house-price-index-data-downloads-january-2024" target="_blank">
         Dataset link
     </a>
