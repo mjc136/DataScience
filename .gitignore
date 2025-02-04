@@ -1,4 +1,4 @@
 venv/
 .vs/
 CarPricePredictor/vehicles.csv
-TwitterSentimentAnalysis/train-00000-of-00001.parquet
+SentimentAnalysis/train-00000-of-00001.parquet
