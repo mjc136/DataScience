@@ -18,7 +18,9 @@ Tried using 'euclidean', 'manhattan', 'chebyshev' as different parameters along 
 Making groups for columns numerical columns like age
 Trying Mutual Information (MI) for Feature Selection to only use important features
 
-gridsearch
+## 11/02/2025
+
+set up gridsearch using 'n_neighbors': [3, 5, 10, 15], 'metric': ['manhattan', 'euclidean'] and 'weights': ['uniform', 'distance'] as parameters
 
 
 
