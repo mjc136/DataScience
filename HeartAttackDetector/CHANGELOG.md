@@ -22,6 +22,12 @@ Trying Mutual Information (MI) for Feature Selection to only use important featu
 
 set up gridsearch using 'n_neighbors': [3, 5, 10, 15], 'metric': ['manhattan', 'euclidean'] and 'weights': ['uniform', 'distance'] as parameters
 
+## 18/02/2025
+
+added Smote to testif it would effect 
+
+
+
 
 
 
