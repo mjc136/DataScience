@@ -24,7 +24,17 @@ set up gridsearch using 'n_neighbors': [3, 5, 10, 15], 'metric': ['manhattan', '
 
 ## 18/02/2025
 
-added Smote to testif it would effect 
+Added SMOTE (Synthetic Minority Over-sampling Technique) to the pipeline to test its effect on the model's performance. However, since the dataset is not imbalanced, SMOTE had no significant impact on the accuracy or the overall performance of the model. Continued to explore other methods to improve the model's predictive power.
+
+## 25/02/2025
+
+Attempted to shift the focus from predicting the binary outcome of a heart attack to calculating the risk score for each individual. This involved modifying the target variable and adjusting the evaluation metrics accordingly. Despite these changes, the model's accuracy remained close to random guessing, indicating that further feature engineering and model tuning are necessary.
+
+## 03/03/2025
+
+used HalvingGridSearchCV to shorten run time as it was 3 hours long with regular cvsearch due to the dataset being large
+
+combined high and medium risk as the model suffered with class seperation and reintroduced smote as this caused imbalance
 
 
 
