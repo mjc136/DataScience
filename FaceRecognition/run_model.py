@@ -43,7 +43,7 @@ def predict_face(image_path, class_names=None):
 
 # Example usage
 if __name__ == "__main__":
-    image_path = os.path.join("FaceRecognition", "data", "1", "0.png")
+    image_path = os.path.join("FaceRecognition", "me.jpg")
     
     # Define class names (modify based on your dataset)
     class_names = [f"Person {i}" for i in range(100)]  # Example for 100 classes
