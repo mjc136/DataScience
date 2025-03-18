@@ -2,3 +2,4 @@ venv/
 .vs/
 *.parquet
 *.csv
+/FaceRecognition/data
