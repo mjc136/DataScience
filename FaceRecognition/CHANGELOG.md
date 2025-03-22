@@ -26,6 +26,11 @@ tried EfficientNetB0 model instead of mobilenetv2 but its behaving poorly
 tried getting tensorflow to use gpu but wont work
 
 tried changing batch size and it fixed the val accuraccy being terribly
-got first successful prediction 
+got first successful prediction but i think it was a fluke
 
 still having overfitting issue where as training loss gets lower val_loss gets higher
+
+## 22/03/2025
+
+trying large number of epochs with callbacks
+got succesful prediction with 50 percent confidence
