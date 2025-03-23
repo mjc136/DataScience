@@ -3,4 +3,3 @@ venv/
 *.parquet
 *.csv
 /FaceRecognition/data
-FaceRecognition/me.jpg
