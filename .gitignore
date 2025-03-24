@@ -4,4 +4,3 @@ venv/
 *.csv
 /FaceRecognition/data
 /CIFAR-10/data
-FaceRecognition/me.jpg
