@@ -8,7 +8,7 @@ Initially, I used TensorFlow, but due to issues with GPU recognition, I switched
 
 The model achieved the maximum possible score during testing.
 
-![alt text](image.png)
+![alt text](CartPole/image.png)
 
 The CartPole environment is a classic reinforcement learning problem where an agent must learn to balance a pole on a moving cart by applying forces to the cart. It provides a good starting point for experimenting with Deep Q-Networks (DQNs) due to its simplicity and well-defined reward structure.
 
