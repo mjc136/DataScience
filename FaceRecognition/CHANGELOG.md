@@ -34,3 +34,4 @@ still having overfitting issue where as training loss gets lower val_loss gets h
 
 trying large number of epochs with callbacks
 got succesful prediction with 50 percent confidence
+cant get it to detect me so i abondoned the ideas it is highly likely my data i gave it for me is subpar 

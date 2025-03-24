@@ -26,8 +26,15 @@ decoded images are coming out more blurry but less blocky
 
 before 
 
-![alt text](image-3.png)
+![alt text](image-2.png)
 
 after
 
-![alt text](image-2.png)
+![alt text](image-3.png)
+
+## 24/03/2025
+
+With ChatGPT:
+- Replaced TensorFlow implementation with PyTorch to resolve GPU compatibility issues and improve training stability.
+- Converted two deep learning models from `tf.keras` to `torch.nn.Module`, retaining original architectures and training logic.
+

@@ -3,3 +3,5 @@ venv/
 *.parquet
 *.csv
 /FaceRecognition/data
+/CIFAR-10/data
+FaceRecognition/me.jpg
